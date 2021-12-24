@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - run: ls /usr/local/lib/android/sdk
       - name: Run a one-line script
         run: ${ANDROID_HOME}/tools/bin/sdkmanager --list
 
